@@ -1,0 +1,18 @@
+{% extends 'FichaPersonal/departamento/formularioDepartamento.html' %}
+{% load static %}
+
+{% block controls %}
+    <h4 class="fw-bold fst-italic text-secondary text-center">Departamentos</h4>
+    <hr class="bg-success border-4 border-top border-success">
+    <br>
+        <div class="col-md-6">
+            <label class="form-label fw-bold">ID:</label>
+            <input type="text" class="form-control" placeholder="Ingrese el ID del departamento">
+        </div>
+    <br>
+        <div class="col-12">
+            <label class="form-label fw-bold">Descripción:</label>
+            <input type="text" class="form-control" style="width: 650px;" placeholder="Ingrese la descripción del departamento">
+        </div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">#</th>
+        <th scope="col" style="width: 20%;">Certificado</th>
+        <th scope="col" style="width: 10%;">Periodo</th>
+        <th scope="col" style="width: 30%;">Duraciòn</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Archivo subido</td>
+      <td>30/01/2010 - 30/09/2010</td>
+      <td>8 meses</td>
+      <td class="acciones">
+        <a href="{% url 'cap' %}">✏️</a>
+        <a href="{% url 'eliminarCapacitaciones'%}">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>Sin archivo</td>
+      <td>15/03/2007 - 15/01/2008</td>
+      <td>10 meses</td>
+      <td class="acciones">
+        <a href="{% url 'cap' %}">✏️</a>
+        <a href="{% url 'eliminarCapacitaciones'%}">❌</a>
+      </td>
+  </tr>
+{% endblock %}

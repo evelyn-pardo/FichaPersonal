@@ -1,0 +1,38 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">#</th>
+        <th scope="col" style="width: 10%;">Cèdula</th>
+        <th scope="col" style="width: 30%;">Celular</th>
+        <th scope="col" style="width: 10%;">Parentesco</th>
+        <th scope="col" style="width: 15%;">Direcciòn</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>0955453741</td>
+      <td>0969188296</td>
+      <td>Madre</td>
+      <td>Dùran</td>
+      <td class="acciones">
+        <a href="{% url 'editarContactoEmergencias' %}">✏️</a>
+        <a href="{% url 'eliminarContactoEmergencia' %}">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>0914123458</td>
+      <td>002268678</td>
+      <td>Padre</td>
+      <td>Milagro</td>
+      <td class="acciones">
+        <a href="{% url 'editarContactoEmergencias' %}">✏️</a>
+        <a href="{% url 'eliminarContactoEmergencia' %}">❌</a>
+      </td>
+  </tr>
+{% endblock %}

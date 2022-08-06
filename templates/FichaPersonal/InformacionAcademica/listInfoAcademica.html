@@ -1,0 +1,38 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">#</th>
+        <th scope="col" style="width: 20%;">Fecha Inicio</th>
+        <th scope="col" style="width: 10%;">Fecha Fin</th>
+        <th scope="col" style="width: 30%;">Instituciòn</th>
+        <th scope="col" style="width: 10%;">Tìtulo</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>29/02/2005</td>
+      <td>15/07/2010</td>
+      <td>Universidad Agraria</td>
+      <td>Contador</td>
+      <td class="acciones">
+        <a href="{% url 'editarInfoAcademica' %}">✏️</a>
+        <a href="{% url 'eliminarInfoAcademica' %}">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>20/07/2004</td>
+      <td>29/11/2010</td>
+      <td>Instituto Tècnologico Bolivariano</td>
+      <td>Tecnòlogo en Sistemas</td>
+      <td class="acciones">
+        <a href="{% url 'editarInfoAcademica' %}">✏️</a>
+        <a href="{% url 'eliminarInfoAcademica' %}">❌</a>
+      </td>
+  </tr>
+{% endblock %}

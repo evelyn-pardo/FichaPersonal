@@ -1,0 +1,38 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">ID</th>
+        <th scope="col" style="width: 20%;">Descripciòn</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Sistemas</td>
+      <td class="acciones">
+        <a href="{% url 'editarDepartamento' %}">✏️</a>
+        <a href="{% url 'eliminarDepartamento' %}">❌</a>
+      </td>
+  </tr>
+  <tr>
+      <td>2</td>
+      <td>Compras</td>
+      <td class="acciones">
+        <a href="{% url 'editarDepartamento' %}">✏️</a>
+        <a href="{% url 'eliminarDepartamento' %}">❌</a>
+      </td>
+  </tr>
+
+  <tr>
+      <td>3</td>
+      <td>Ventas</td>
+      <td class="acciones">
+        <a href="{% url 'editarDepartamento' %}">✏️</a>
+        <a href="{% url 'eliminarDepartamento' %}">❌</a>
+      </td>
+  </tr>
+{% endblock %}

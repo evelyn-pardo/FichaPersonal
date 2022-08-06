@@ -1,0 +1,63 @@
+{% extends 'FichaPersonal/DatosMedicos/formularioDatosMedicos.html' %}
+{% load static %}
+
+{% block controls %}
+    <h4 class="fw-bold fst-italic text-secondary text-center">DATOS MÉDICOS</h4>
+    <hr class="bg-success border-4 border-top border-success">
+        <div class="col-md-5">
+            <label class="form-label fw-bold">Posee alguna discapacidad:</label>
+            <div class="form-check mx-auto" style="width: 200px">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Si
+                </label>
+            </div>
+            <div class="form-check mx-auto" style="width: 200px">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                No
+                </label>
+            </div>
+        </div>
+        <div id="FITB_105" class="FITB formRender">
+            <label for="inputState" class="form-label fw-bold">Tomas algun medicamento:
+            <input type="text" class="form-textbox validate[]" style="width: 50px; max-width: 1000px;">
+            <label for="105_shorttext-3"></label>
+            </label>
+            <b>menciona cuales<b/>
+            <span data-type="textbox" data-grouptype="control_textbox" class="FITB-inptCont">
+            <input type="text" class="form-textbox " style="width: 350px; max-width: 1000px;">
+            </span>
+        </div>
+        <div class="col-12">
+            <label for="inputState" class="form-label fw-bold">Tipo de Sangre:</label>
+            <select id="inputState" class="form-select" style="width: 400px;">
+                <option selected>-------</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+        </div>
+        <br>
+        <div class="col-md-5">
+            <label class="form-label fw-bold">Se encuentra vacunado para COVID-19:</label>
+            <div class="form-check mx-auto" style="width: 5px">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Si
+                </label>
+            </div>
+            <div class="form-check mx-auto" style="width: 5px">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                No
+                </label>
+            </div>
+        </div>
+
+{% endblock %}

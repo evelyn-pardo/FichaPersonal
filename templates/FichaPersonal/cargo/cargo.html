@@ -1,0 +1,52 @@
+{% extends "fichaPersonal.html" %}
+{% block titulo %}
+  Cargos
+{% endblock %}
+{% load static %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/form.css' %}" />
+{% endblock %}
+
+{% block contenido %}
+      <section class="form-container">
+        <div class="form-header" >
+          <h1>Formulario de Cargos </h1>
+        </div>
+        <form method="POST" id="form-cargo" class="form">
+          <!-- Referencio el formulario cargo -->
+          {% csrf_token %}
+          {{cargoForm.as_p }}
+          <button
+            id="enviar"
+            type="submit"
+            name="enviar">
+            {{ accion }}
+          </button>
+        </form>
+        <div class="consulta none table-responsive" id="consulta">
+          <h2>Listado de Cargos</h2>
+          <table class="consulta-est" id="consulta-est" border="4">
+            <thead >
+                <th >#</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody class="detalle-est" id="detalle-est">
+                {% for cargo in cargos %}
+                <tr>
+                  <td>{{forloop.counter}}</td>
+                  <td>{{cargo.descripcion}}</td>
+                  <td>{{cargo.estado}}</td>
+                  <td class="acciones">
+                    <a href="{% url 'editarCargo' cargo.id %}">✏️</a>
+                    <a href="{% url 'eliminarCargo' cargo.id %}">❌</a>
+                  </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+{% endblock %}

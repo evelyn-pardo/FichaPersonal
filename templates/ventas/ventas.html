@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+      <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+          <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/administracion.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title text-success">Articulos</h5>
+                <p class="card-text">Articulos listos para la venta a los clientes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/administracion-del-dinero.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+               <div class="card-body text-center">
+                <h5 class="card-title text-success">Grupos Articulos</h5>
+                <p class="card-text">Articulos organizados segun su linea</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem"  >
+              <img src="{% static 'img/cards/gestion-de-equipos.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+               <div class="card-body text-center">
+                <h5 class="card-title text-success">Venta Productos</h5>
+                <p class="card-text">Venta de los productos a los clientes</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card"  style="height:15rem" >
+              <img src="{% static 'img/cards/gestion-de-producto.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'cliente' %}">
+                  <h5 class="card-title text-success">Clientes</h5>
+                </a>
+                <p class="card-text">Registro de clientes que compran en la empresa</p>
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="card" style="height:15rem"  >
+              <img src="{% static 'img/cards/administracion.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+             <div class="card-body text-center">
+                <h5 class="card-title text-success">Vendedores</h5>
+                <p class="card-text">Registro de vendedores que trabajan en la empresa</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/administracion-del-dinero.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+             <div class="card-body text-center">
+                <h5 class="card-title text-success">Consultas</h5>
+                <p class="card-text ">Principales consultas de los procesos de la empresa</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem"  >
+              <img src="{% static 'img/cards/gestion-de-equipos.png' %}" class="img-fluid  mx-auto d-block" style="width:35%" alt="">
+              <div class="card-body text-center">
+                <h5 class="card-title text-success">Indicadores</h5>
+                <p class="card-text ">Indicadores graficos de los procesos de la empresa</p>
+              </div>
+            </div>
+          </div>
+
+
+       </div>
+      </div>
+{% endblock %}

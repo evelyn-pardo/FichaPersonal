@@ -1,0 +1,41 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">Nro</th>
+        <th scope="col" style="width: 20%;">Nombre</th>
+        <th scope="col" style="width: 10%;">Cedula</th>
+        <th scope="col" style="width: 30%;">Direccion</th>
+        <th scope="col" style="width: 10%;">Telefono</th>
+        <th scope="col" style="width: 15%;">Correo</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Daniel Vera</td>
+      <td>0914123458</td>
+      <td>Milagro</td>
+      <td>002268678</td>
+      <td>davparedes@gmail.com</td>
+      <td class="acciones">
+        <a href="#">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>Erick Bohorquez</td>
+      <td>0914123458</td>
+      <td>Milagro</td>
+      <td>002268678</td>
+      <td>davparedes@gmail.com</td>
+      <td class="acciones">
+        <a href="#">✏️</a>
+        <a href="#">❌</a>
+      </td>
+  </tr>
+{% endblock %}

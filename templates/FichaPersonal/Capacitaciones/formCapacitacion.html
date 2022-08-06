@@ -1,0 +1,27 @@
+{% extends 'FichaPersonal/Capacitaciones/formularioCapacitaciones.html' %}
+{% load static %}
+
+{% block controls %}
+    <h4 class="fw-bold fst-italic text-secondary text-center">CAPACITACIONES</h4>
+    <hr class="bg-success border-4 border-top border-success">
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Certificado:</label>
+            <div class="input-group">
+                    <span class="btn btn-primary btn-file">
+                        <input accept=".jpg,.png,.jpeg,.gif" class="hidden" name="banner" type="file" id="banner">
+                    </span>
+                <input class="form-control" id="banner_captura" readonly="readonly" name="banner_captura" type="text" value="">
+            </div>
+        </div>
+    <br>
+        <div class="col-md-6">
+            <label class="form-label fw-bold">Periodo:</label>
+            <input type="date" class="form-control" placeholder="Ingrese el perdíodo de capacitación">
+        </div>
+    <br>
+        <div class="col-12">
+            <label class="form-label fw-bold">Duración:</label>
+            <input type="text" class="form-control" style="width: 650px;" placeholder="Ingrese el tiempo de duración de la capacitación">
+        </div>
+
+{% endblock %}

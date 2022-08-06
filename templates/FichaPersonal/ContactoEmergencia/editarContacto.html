@@ -1,0 +1,48 @@
+{% extends 'formCont.html' %}
+{% load static %}
+
+{% block controls %}
+    <h4 class="fw-bold fst-italic text-secondary text-center">CONTACTO DE EMERGENCIA</h4>
+    <hr class="bg-success border-4 border-top border-success">
+        <div class="col-12">
+            <label class="form-label fw-bold">Nombre:</label>
+            <input type="text" class="form-control" style="width: 650px;" placeholder="Ingrese el nombre">
+        </div>
+        <br>
+        <div class="col-12">
+            <label class="form-label fw-bold">Cédula:</label>
+            <input type="text" class="form-control" style="width: 650px;" placeholder="Ingrese su número de cédula">
+        </div>
+        <br>
+        <div class="col-12">
+            <label class="form-label fw-bold">Celular / Teléfono Fijo:</label>
+            <input type="text" class="form-control" style="width: 650px;" placeholder="Número celular">
+        </div>
+        <br>
+
+        <div class="col-12">
+            <label for="inputState" class="form-label fw-bold">Parentesco:</label>
+            <select id="inputState" class="form-select" style="width: 650px;">
+                <option selected>------</option>
+                <option>MADRE</option>
+                <option>PADRE</option>
+                <option>HERMANO(A)</option>
+                <option>ABUELO(A)</option>
+                <option>TIO(A)</option>
+                <option>PRIMO(A)</option>
+                <option>SOBRINO(A)</option>
+                <option>CUÑADO(A)</option>
+                <option>PADRASTRO</option>
+                <option>MADRASTRA</option>
+                <option>OTROS</option>
+                <option>CONYUGE</option>
+                <option>HIJO(A)</option>
+            </select>
+        </div>
+        <br>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label fw-bold">Dirección:</label>
+            <input type="text" class="form-control" style="width: 650px;" id="inputAddress" placeholder="Escribir dirección">
+        </div>
+
+{% endblock %}

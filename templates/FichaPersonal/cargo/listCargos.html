@@ -1,0 +1,38 @@
+{% extends 'consulta.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">ID</th>
+        <th scope="col" style="width: 20%;">Descripciòn</th>
+        <th scope="col" style="width: 10%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Gerente de Sistemas</td>
+      <td class="acciones">
+        <a href="{% url 'car' %}">✏️</a>
+        <a href="{% url 'eliminarCargo'%}">❌</a>
+      </td>
+  </tr>
+  <tr>
+      <td>2</td>
+      <td>Gerente de Compras</td>
+      <td class="acciones">
+        <a href="{% url 'car' %}">✏️</a>
+        <a href="{% url 'eliminarCargo'%}">❌</a>
+      </td>
+  </tr>
+
+  <tr>
+      <td>3</td>
+      <td>Contador</td>
+      <td class="acciones">
+        <a href="{% url 'car' %}">✏️</a>
+        <a href="{% url 'eliminarCargo'%}">❌</a>
+      </td>
+  </tr>
+{% endblock %}

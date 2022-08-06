@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+      <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+          <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/ingreso-datos-personales.png' %}" class="img-fluid  mx-auto d-block" style="width:45%" alt="">
+              <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'empleado' %}">
+                  <h5 class="card-title text-success">Ingreso de Datos</h5>
+                </a>
+                <p class="card-text">Ingresar datos personales de los empleados</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/datos-medicos.png' %}" class="img-fluid  mx-auto d-block" style="width:45%" alt="">
+              <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'datosMedicos' %}">
+                  <h5 class="card-title text-success">Datos Mèdicos</h5>
+                </a>
+                <p class="card-text">Datos mèdicos de los empleados</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/contacto-emergencia.png' %}" class="img-fluid  mx-auto d-block" style="width:42%" alt="">
+              <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'contactoEmergencias' %}">
+                  <h5 class="card-title text-success">Contacto de Emergencia</h5>
+                </a>
+                <p class="card-text">Contacto de emergencia de los empleados</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/informacio-academica.png' %}" class="img-fluid  mx-auto d-block" style="width:45%" alt="">
+              <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'infoAcademica' %}">
+                  <h5 class="card-title text-success">Informaciòn Acadèmica</h5>
+                </a>
+                <p class="card-text">Informacion acadèmica de los empleados</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/capacitaciones.png' %}" class="img-fluid  mx-auto d-block" style="width:55%" alt="">
+              <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'capacitaciones' %}">
+                  <h5 class="card-title text-success">Capacitaciones</h5>
+                </a>
+                <p class="card-text">Capacitaciones de los empleados</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/cargos.png' %}" class="img-fluid  mx-auto d-block" style="width:45%" alt="">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'cargo' %}">
+                  <h5 class="card-title text-success">Cargos</h5>
+                </a>
+                <p class="card-text">Cargos de los empleados</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem"  >
+              <img src="{% static 'img/cards/departamentos.png' %}" class="img-fluid  mx-auto d-block" style="width:62%" alt="">
+               <div class="card-body text-center">
+               <a class="text-decoration-none" href="{% url 'departamento' %}">
+                  <h5 class="card-title text-success">Departamentos</h5>
+               </a>
+                <p class="card-text">Departamentos en donde se ubican los empleados</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card"  style="height:15rem" >
+              <img src="{% static 'img/cards/sueldo.png' %}" class="img-fluid  mx-auto d-block" style="width:45%" alt="">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'sueldo' %}">
+                  <h5 class="card-title text-success">Sueldo</h5>
+                </a>
+                <p class="card-text">Ingreso de sueldos de los empleados</p>
+              </div>
+            </div>
+          </div>
+
+
+       </div>
+      </div>
+{% endblock %}
